@@ -24,3 +24,10 @@ class SubjectsView(viewsets.ModelViewSet):
     """CRUD for subjects"""
     serializer_class = SubjectSerializer
     queryset = Subject.objects.all()
+
+
+class SubjectsView(viewsets.ModelViewSet):
+    """CRUD for subjects"""
+    serializer_class = SubjectSerializer
+    queryset = Subject.objects.all()
+
