@@ -24,6 +24,10 @@ class SubjectsView(viewsets.ModelViewSet):
     """CRUD for subjects"""
     serializer_class = SubjectSerializer
     queryset = Subject.objects.all()
+    def create(self, request, *args, **kwargs):
+        print()
+        
+        return super().create(request, *args, **kwargs)
 
 
 class SubjectsView(viewsets.ModelViewSet):
